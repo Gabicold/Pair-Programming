@@ -22,7 +22,6 @@ flex-direction:column;
 width:100%;
 min-height:100vh;
 height: auto;
-border: 2px solid black;
 margin-top:10vh;
 background-color:#F2F4F1;
 `
@@ -141,6 +140,7 @@ display: flex;
 margin-top: 9vh;
 justify-content: space-evenly;
 
+
 `
 const FlyerSpoonImg = styled.img`
 width:50vw;
@@ -176,7 +176,8 @@ justify-content: center;
 export default class Main extends React.Component {
  render() {
     return (
-        <Background>
+        <section>
+            <Background>
             <GlobalStyle/>
             <SubtitleContainer>
                 <Subtitle>latest Recipies</Subtitle>
@@ -198,16 +199,19 @@ export default class Main extends React.Component {
                     <LinhaMilk></LinhaMilk>
                     <TextoPizza>Peanut Smoothie</TextoPizza>
                 </FlyerMilk>
-                <FlyerSpoon>
+                
+            </FlyerContainer>
+        </Background>
+        <FlyerSpoon>
                     <FlyerSpoonImg src={spoon} alt="Spoon flyer" />
                 <ContentSpoon>
                     <TitleSpoon>About</TitleSpoon>
                     <LinhaSpoon></LinhaSpoon>
                     <TextoSpoon>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, tortor nec rhoncus dictum, lorem massa tempus sem, eu tincidunt libero velit sit amet velit. Nunc in euismod urna. Duis dapibus, elit eu eleifend tincidunt, nulla ipsum consectetur lorem, quis tempor lorem justo quis nisi. Nam interdum, nisi nec mollis sagittis, enim risus euismod nisi, quis rutrum quam augue id mauris. Pellentesque mattis hendrerit semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut vestibulum nisl ante, et ultricies sapien facilisis aliquam.</TextoSpoon>
                 </ContentSpoon>
-                </FlyerSpoon>
-            </FlyerContainer>
-        </Background>
+        </FlyerSpoon>
+        </section>
+        
 
         )
     }
