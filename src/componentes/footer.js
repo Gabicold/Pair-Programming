@@ -12,16 +12,23 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Roboto', sans-serif;
   color:#373737;
 }`
+const BoxTest = styled.div`
+display:flex;
+top:50vh;
+left:50%;
+flex-direction:column;
+width:10vw;
+`
 export default class Footer extends React.Component {
     render() {
        return (
-        <div>
+        <BoxTest>
           <GlobalStyle/>
           <h4>SUBSCRIBE</h4>
           <p>Sign up for newsletter</p>
           <input type="text" placeholder="Your Email"/>
           <button>SUBMITE</button>
-        </div>
+        </BoxTest>
        )
     }
 }
