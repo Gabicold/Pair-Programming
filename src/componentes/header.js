@@ -31,7 +31,6 @@ justify-content: space-between;
 `
 const ContainerList = styled.ul`
     display:flex;
-    
 `
 const List = styled.li`
    display:flex;
