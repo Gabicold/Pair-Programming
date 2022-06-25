@@ -34,6 +34,7 @@ justify-content:center;
 const Subtitle = styled.h2`
 text-transform: uppercase;
 font-size:30px;
+padding-top: 15vh;
 `
 const Underline = styled.div`
 border-bottom:#373737 solid 3px;
@@ -70,13 +71,11 @@ const LinhaBolo = styled.div`
 border-bottom:#373737 solid 3px;
 width: 54px;
 height: 0px;
-position:relative;
-top:13vh;
+margin-top:10vh;
 `
 const TextoBolo = styled.p`
-position:relative;
-top:15vh;
-font-size:1.5rem;
+margin-top:2vh;
+font-size:1.25rem;
 `
 //Flyer Pizza
 const FlyerPizza = styled.div`
@@ -97,13 +96,11 @@ const LinhaPizza = styled.div`
 border-bottom:#373737 solid 3px;
 width: 54px;
 height: 0px;
-position:relative;
-    top:13vh;
+margin-top:10vh;
 `
 const TextoPizza = styled.p`
-position:relative;
-    top:15vh;
-font-size:1.5rem;
+margin-top:2vh;
+font-size:1.25rem;
 `
 //Flyer Milk
 const FlyerMilk = styled.div`
@@ -124,23 +121,18 @@ const LinhaMilk = styled.div`
 border-bottom:#373737 solid 3px;
 width: 54px;
 height: 0px;
-position:relative;
-top:13vh;
+margin-top:10vh;
 `
 const TextoMilk = styled.p`
-position:relative;
-top:15vh;
-font-size:1.5rem;
+margin-top:2vh;
+font-size:1.25rem;
 `
 //FlyerSpoon
 const FlyerSpoon = styled.div`
 width: 100%;
-height: 45vh;
+height: auto;
 display: flex;
-margin-top: 9vh;
 justify-content: space-evenly;
-
-
 `
 const FlyerSpoonImg = styled.img`
 width:50vw;
